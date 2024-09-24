@@ -22,7 +22,7 @@ const Header = () => {
       <nav className={`md:flex ${menuIsActive ? 'block' : 'hidden'} absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent`}>
         <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 p-4 md:p-0">
           <li>
-            <Link to="/" className="text-lg">Home</Link>
+            <Link to="/AT-Fundamentos_React/" className="text-lg">Home</Link>
           </li>
           <li>
             <Link to="/favoritos" className="text-lg">Favoritos</Link>
