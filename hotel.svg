@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<circle style="fill:#FF6472;" cx="256" cy="256" r="256"/>
+<path style="fill:#C75163;" d="M509.119,294.493L336.162,121.535l-17.441,16.182l-42.68-39.491l-20.882,29.896l35.569,35.569
+	l-46.221,42.889l-148.83,182.16l120.106,120.106C228.885,510.914,242.316,512,256,512C384.302,512,490.551,417.614,509.119,294.493z
+	"/>
+<rect x="95.677" y="228.417" style="fill:#C9F4F4;" width="160.323" height="160.323"/>
+<rect x="256" y="228.417" style="fill:#84DBFF;" width="160.323" height="160.323"/>
+<g>
+	<rect x="175.838" y="121.535" style="fill:#FFFFFF;" width="160.323" height="267.205"/>
+	<rect x="256" y="121.535" style="fill:#FFFFFF;" width="80.162" height="267.205"/>
+</g>
+<path style="fill:#FFBBD5;" d="M232.519,106.555c0-6.484,5.256-11.74,11.742-11.74c6.485,0,11.742,5.256,11.742,11.74
+	c0-6.484,5.256-11.74,11.742-11.74s11.742,5.256,11.742,11.74c0,11.226-23.481,24.654-23.481,24.654
+	S232.519,118.413,232.519,106.555z"/>
+<path style="fill:#FF9CC2;" d="M279.481,106.555c0-6.484-5.256-11.74-11.742-11.74c-6.48,0-11.735,5.251-11.74,11.729v24.664
+	C256.012,131.201,279.481,117.779,279.481,106.555z"/>
+<g>
+	<rect x="189.595" y="185.768" style="fill:#B5F1F4;" width="132.792" height="30.768"/>
+	<rect x="189.595" y="144.205" style="fill:#B5F1F4;" width="132.792" height="30.768"/>
+	<rect x="189.595" y="268.912" style="fill:#B5F1F4;" width="132.792" height="30.768"/>
+</g>
+<rect x="229.279" y="308.579" style="fill:#FD8469;" width="53.441" height="80.162"/>
+<rect x="256" y="308.579" style="fill:#FC6F58;" width="26.721" height="80.162"/>
+<rect x="122.397" y="252.707" style="fill:#84DBFF;" width="26.721" height="30.768"/>
+<rect x="362.882" y="252.707" style="fill:#31BAFD;" width="26.721" height="30.768"/>
+<rect x="122.397" y="308.579" style="fill:#84DBFF;" width="26.721" height="30.768"/>
+<rect x="362.882" y="308.579" style="fill:#31BAFD;" width="26.721" height="30.768"/>
+<rect x="189.595" y="227.331" style="fill:#B5F1F4;" width="132.792" height="30.768"/>
+<g>
+	<rect x="256" y="185.768" style="fill:#84DBFF;" width="66.396" height="30.768"/>
+	<rect x="256" y="144.205" style="fill:#84DBFF;" width="66.396" height="30.77"/>
+	<rect x="256" y="268.912" style="fill:#84DBFF;" width="66.396" height="30.768"/>
+	<rect x="256" y="227.331" style="fill:#84DBFF;" width="66.396" height="30.768"/>
+</g>
+</svg>
