@@ -17,7 +17,7 @@ const Favoritos = () => {
       <Header />
       <main className="md:flex flex:row gap-10 justify-center content-center mb-7 mt-7 flex-wrap p-1.5">
         {hotelsData.map((hotel) => (
-          <HotelCard key={hotel.id} hotel={hotel} />
+          <HotelCard key={hotel.id} hotel={hotel} showButtons={false}/>
         ))}
       </main>
       <Footer />

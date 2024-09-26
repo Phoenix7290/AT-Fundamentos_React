@@ -5,10 +5,10 @@ import { CiCircleRemove } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const HotelCard = ({ hotel, onEdit, onDelete, onToggleFavorite }) => {
+const HotelCard = ({ hotel, onEdit, onDelete, onToggleFavorite, showButtons }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white dark:bg-gray-800" id={hotel.id}>
-      <Link to={`/details/${hotel.id}`}>
+      <Link to={`/AT-Fundamentos_React/details/${hotel.id}`}>
         <img className="w-full h-48 object-cover" src={hotel.image} alt={hotel.name} />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-100">{hotel.name}</div>
@@ -19,27 +19,29 @@ const HotelCard = ({ hotel, onEdit, onDelete, onToggleFavorite }) => {
           <p className="text-gray-700 dark:text-gray-300 text-base mt-2">{hotel.services}</p>
         </div>
       </Link>
-      <div className="px-6 py-4 flex justify-between items-center border-t border-gray-200 dark:border-gray-700">
-        {hotel.isFavorite ? (
-          <FaHeart 
-            className="cursor-pointer text-2xl text-red-500 hover:text-red-700" 
-            onClick={() => onToggleFavorite(hotel.id)}
+      {showButtons && (
+        <div className="px-6 py-4 flex justify-between items-center border-t border-gray-200 dark:border-gray-700">
+          {hotel.isFavorite ? (
+            <FaHeart 
+              className="cursor-pointer text-2xl text-red-500 hover:text-red-700" 
+              onClick={() => onToggleFavorite(hotel.id)}
+            />
+          ) : (
+            <FaRegHeart 
+              className="cursor-pointer text-2xl text-red-500 hover:text-red-700" 
+              onClick={() => onToggleFavorite(hotel.id)} 
+            />
+          )}
+          <FaRegEdit 
+            className="cursor-pointer text-2xl text-blue-500 hover:text-blue-700" 
+            onClick={() => onEdit(hotel)} 
           />
-        ) : (
-          <FaRegHeart 
-            className="cursor-pointer text-2xl text-red-500 hover:text-red-700" 
-            onClick={() => onToggleFavorite(hotel.id)} 
+          <CiCircleRemove 
+            className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700" 
+            onClick={() => onDelete(hotel.id)} 
           />
-        )}
-        <FaRegEdit 
-          className="cursor-pointer text-2xl text-blue-500 hover:text-blue-700" 
-          onClick={() => onEdit(hotel)} 
-        />
-        <CiCircleRemove 
-          className="cursor-pointer text-2xl text-gray-500 hover:text-gray-700" 
-          onClick={() => onDelete(hotel.id)} 
-        />
-      </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -60,6 +62,7 @@ HotelCard.propTypes = {
   onEdit: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
   onToggleFavorite: PropTypes.func.isRequired,
+  showButtons: PropTypes.bool.isRequired,
 };
 
 export default HotelCard;

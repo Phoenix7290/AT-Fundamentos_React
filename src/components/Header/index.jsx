@@ -24,7 +24,7 @@ const Header = () => {
             <Link to="/AT-Fundamentos_React/" className="text-lg text-gray-900 dark:text-white">Home</Link>
           </li>
           <li>
-            <Link to="/favoritos" className="text-lg text-gray-900 dark:text-white">Favoritos</Link>
+            <Link to="/AT-Fundamentos_React/favoritos" className="text-lg text-gray-900 dark:text-white">Favoritos</Link>
           </li>
         </ul>
       </nav>

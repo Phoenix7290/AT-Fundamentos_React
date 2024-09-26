@@ -3,7 +3,10 @@ import Modal from "react-modal";
 import { IoMdAddCircle } from "react-icons/io";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import PropTypes from "prop-types";
+
 import { v4 as uuidv4 } from "uuid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const customStyles = {
   content: {
@@ -54,6 +57,18 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
     }));
   };
 
+  const notify = () =>
+    toast.success("Salvo com sucesso!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -72,6 +87,8 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
       localStorage.setItem("hotels", JSON.stringify(existingData));
       addHotel(hotelKey);
     }
+
+    notify();
 
     setFormData({
       name: "",
@@ -105,6 +122,19 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
 
   return (
     <div className="flex flex-row-reverse p-5">
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition:Bounce
+      />
       {!editingHotel && (
         <IoMdAddCircle
           onClick={openModal}

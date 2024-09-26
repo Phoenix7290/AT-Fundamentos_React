@@ -14,11 +14,11 @@ const router = createBrowserRouter([
         element: <Home />,
     },
     {
-        path: "/details/:hotelId",
+        path: "/AT-Fundamentos_React/details/:hotelId",
         element: <Details />,
     },
     {
-        path: "/favoritos",
+        path: "/AT-Fundamentos_React/favoritos",
         element: <Favoritos />,
     },
     {
