@@ -32,7 +32,7 @@ const SearchBar = ({ onSearch, onSort }) => {
             onChange={handleSortChange}
             className="border border-gray-400 p-2 dark:bg-gray-800"
           >
-            <option value="none" disabled>Ordenar</option>
+            <option value="none">Ordenar</option>
             <option value="lowPrice">Menor Preço</option>
             <option value="highPrice">Maior Preço</option>
             <option value="lowRating">Menor Classificação</option>
