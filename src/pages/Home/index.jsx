@@ -84,16 +84,20 @@ export default function Home() {
       <Header />
       <SearchBar onSearch={handleSearch} onSort={handleSort} />
       <main className="md:flex flex:row gap-10 justify-center content-center mb-7 mt-7 flex-wrap p-1.5">
-        {sortedHotels.map((hotel) => (
-          <HotelCard
-            key={hotel.id}
-            hotel={hotel}
-            onEdit={handleEdit}
-            onDelete={deleteHotel}
-            onToggleFavorite={toggleFavorite}
-            showButtons={true}
-          />
-        ))}
+        {sortedHotels.length > 0 ? (
+          sortedHotels.map((hotel) => (
+            <HotelCard
+              key={hotel.id}
+              hotel={hotel}
+              onEdit={handleEdit}
+              onDelete={deleteHotel}
+              onToggleFavorite={toggleFavorite}
+              showButtons={true}
+            />
+          ))
+        ) : (
+          <p className="text-center text-lg">Não há nenhum hotel salvo</p>
+        )}
       </main>
 
       <ModalForm

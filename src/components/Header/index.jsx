@@ -1,13 +1,36 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   const [menuIsActive, setMenuIsActive] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  );
 
   const handleMenu = () => {
     setMenuIsActive(!menuIsActive);
   };
+
+  const toggleTheme = () => {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    if (newTheme) {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    }
+  };
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center border-b-2 dark:border-gray-700">
@@ -25,6 +48,14 @@ const Header = () => {
           </li>
           <li>
             <Link to="/AT-Fundamentos_React/favoritos" className="text-lg text-gray-900 dark:text-white">Favoritos</Link>
+          </li>
+          <li>
+            <button 
+              onClick={toggleTheme}
+              className="bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-white py-1 px-3 rounded"
+            >
+              {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
           </li>
         </ul>
       </nav>

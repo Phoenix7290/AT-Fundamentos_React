@@ -6,9 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      darkMode: 'media',
+      // darkMode: 'selector',
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
 
