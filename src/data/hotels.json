@@ -4,69 +4,109 @@
         "name": "Hotel 1",
         "description": "Description 1",
         "price": 100,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Screen-Shot-2017-11-21-at-11.17.56.png",
+        "city": "City 1",
+        "state": "State 1",
+        "rating": 1,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 2,
         "name": "Hotel 2",
         "description": "Description 2",
         "price": 200,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Mauritius-St-Regis-Hotel-Front-630x354.jpg",
+        "city": "City 2",
+        "state": "State 2",
+        "rating": 2,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 3,
         "name": "Hotel 3",
         "description": "Description 3",
         "price": 300,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/pqcjw_phototour16-577x400.jpg",
+        "city": "City 3",
+        "state": "State 3",
+        "rating": 3,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 4,
         "name": "Hotel 4",
         "description": "Description 4",
         "price": 400,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Most_Expensive.jpg",
+        "city": "City 4",
+        "state": "State 4",
+        "rating": 4,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 5,
         "name": "Hotel 5",
         "description": "Description 5",
         "price": 500,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Chiva-Som-Pool-u%CC%82-Beach-View-H-1-600x400.jpg",
+        "city": "City 5",
+        "state": "State 5",
+        "rating": 5,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 6,
         "name": "Hotel 6",
         "description": "Description 6",
         "price": 600,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Screen-Shot-2017-04-28-at-17.19.51-603x400.png",
+        "city": "City 6",
+        "state": "State 6",
+        "rating": 6,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 7,
         "name": "Hotel 7",
         "description": "Description 7",
         "price": 700,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Overall-Loews-Coronado-Bay-high-res-630x318.jpg",
+        "city": "City 7",
+        "state": "State 7",
+        "rating": 7,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 8,
         "name": "Hotel 8",
         "description": "Description 8",
         "price": 800,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/22/2017/04/Screen-Shot-2017-04-21-at-14.22.33.png",
+        "city": "City 8",
+        "state": "State 8",
+        "rating": 8,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 9,
         "name": "Hotel 9",
         "description": "Description 9",
         "price": 900,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://image-cdn.hypb.st/https://bae.hypebeast.com/files/2021/07/best-most-beautiful-hotels-in-the-world-13.jpg?w=1600&cbr=1&q=90&fit=max",
+        "city": "City 9",
+        "state": "State 9",
+        "rating": 9,
+        "services": "Service 1, Service 2, Service 3"
     },
     {
         "id": 10,
         "name": "Hotel 10",
         "description": "Description 10",
         "price": 1000,
-        "image": "https://via.placeholder.com/150"
+        "image": "https://the-hunt.net/wp-content/uploads/2021/11/pool-384573_960_720.jpg",
+        "city": "City 10",
+        "state": "State 10",
+        "rating": 10,
+        "services": "Service 1, Service 2, Service 3"
     }
 ]

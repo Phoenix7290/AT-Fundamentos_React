@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 
 import Home from "../pages/Home";
-import Lista from "../pages/Lista";
+import Details from "../pages/Details";
 import Favoritos from "../pages/Favoritos";
 import Admin from "../pages/Admin";
 import NotFound from "../pages/NotFound";
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
         element: <Home />,
     },
     {
-        path: "/lista",
-        element: <Lista />,
+        path: "/details/:hotelId",
+        element: <Details />,
     },
     {
         path: "/favoritos",

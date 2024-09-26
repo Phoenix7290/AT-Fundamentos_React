@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import ModalForm from "../../components/Modal";
+import ModalForm from "../../components/ModalForm";
 
 const admin = () => {
     return (

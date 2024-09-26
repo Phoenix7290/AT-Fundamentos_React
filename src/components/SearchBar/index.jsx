@@ -1,31 +1,44 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 
-const SearchBar = ({ onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+const SearchBar = ({ onSearch, onSort }) => {
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    onSearch(value);
+  };
 
-  const handleSearch = () => {
-    onSearch(searchTerm);
+  const handleSortChange = (event) => {
+    const value = event.target.value;
+    onSort(value); 
   };
 
   return (
-    <div className="flex justify-center content-center w-100vw flex-col p-3">
-      <div className="flex flex-row justify-between mb-5">
-        <h1>Pesquise por Hotéis</h1>
-        <select name="hotel" id="hotel">
-            <option value="hotel1">Hotel 1</option>
-            <option value="hotel2">Hotel 2</option>
-            <option value="hotel3">Hotel 3</option>
-        </select>
-      </div>
-      <div>
-        <input
-          className="border border-gray-400"
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button onClick={handleSearch} className="border-gray-400">Search</button>
+    <div className="flex justify-center items-center w-full p-3">
+      <div className="w-full max-w-lg">
+        <div>
+          <label className="block text-center mb-2">Pesquise por Hotéis</label>
+          <input
+            className="border border-gray-400 w-full mb-4 p-2"
+            type="text"
+            onChange={handleInputChange} 
+          />
+        </div>
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <label htmlFor="hotel" className="mb-2 md:mb-0 md:mr-2">
+            Ordenar por:
+          </label>
+          <select
+            name="hotel"
+            id="hotel"
+            onChange={handleSortChange}
+            className="border border-gray-400 p-2"
+          >
+            <option value="none" disabled>Ordenar</option>
+            <option value="lowPrice">Menor Preço</option>
+            <option value="highPrice">Maior Preço</option>
+            <option value="lowRating">Menor Classificação</option>
+            <option value="highRating">Maior Classificação</option>
+          </select>
+        </div>
       </div>
     </div>
   );
@@ -33,6 +46,7 @@ const SearchBar = ({ onSearch }) => {
 
 SearchBar.propTypes = {
   onSearch: PropTypes.func.isRequired,
+  onSort: PropTypes.func.isRequired,
 };
 
 export default SearchBar;
