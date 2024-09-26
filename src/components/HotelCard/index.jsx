@@ -7,19 +7,19 @@ import PropTypes from "prop-types";
 
 const HotelCard = ({ hotel, onEdit, onDelete, onToggleFavorite }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4" id={hotel.id}>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-white dark:bg-gray-800" id={hotel.id}>
       <Link to={`/details/${hotel.id}`}>
         <img className="w-full h-48 object-cover" src={hotel.image} alt={hotel.name} />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{hotel.name}</div>
-          <p className="text-gray-700 text-base">{hotel.city}, {hotel.state}</p>
-          <p className="text-gray-700 text-base">Rating: {hotel.rating}</p>
-          <p className="text-gray-700 text-base">Price: ${hotel.price}</p>
-          <p className="text-gray-700 text-base mt-2">{hotel.description}</p>
-          <p className="text-gray-700 text-base mt-2">{hotel.services}</p>
+          <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-100">{hotel.name}</div>
+          <p className="text-gray-700 dark:text-gray-300 text-base">{hotel.city}, {hotel.state}</p>
+          <p className="text-gray-700 dark:text-gray-300 text-base">Rating: {hotel.rating}</p>
+          <p className="text-gray-700 dark:text-gray-300 text-base">Price: ${hotel.price}</p>
+          <p className="text-gray-700 dark:text-gray-300 text-base mt-2">{hotel.description}</p>
+          <p className="text-gray-700 dark:text-gray-300 text-base mt-2">{hotel.services}</p>
         </div>
       </Link>
-      <div className="px-6 py-4 flex justify-between items-center border-t">
+      <div className="px-6 py-4 flex justify-between items-center border-t border-gray-200 dark:border-gray-700">
         {hotel.isFavorite ? (
           <FaHeart 
             className="cursor-pointer text-2xl text-red-500 hover:text-red-700" 

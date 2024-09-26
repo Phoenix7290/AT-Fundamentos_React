@@ -108,7 +108,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
       {!editingHotel && (
         <IoMdAddCircle
           onClick={openModal}
-          className="text-3xl text-blue-500 cursor-pointer"
+          className="text-6xl text-blue-500 cursor-pointer"
         />
       )}
       <Modal
@@ -118,11 +118,11 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
         style={customStyles}
         contentLabel="Hotel Modal"
       >
-        <div className="p-6 bg-white rounded-lg shadow-lg max-w-full sm:max-w-lg mx-auto">
+        <div className="p-6 bg-white rounded-lg shadow-lg max-w-full sm:max-w-lg mx-auto dark:bg-slate-200">
           <div className="flex justify-between items-center mb-4">
             <h2
               ref={(_subtitle) => (subtitle = _subtitle)}
-              className="text-2xl font-semibold text-gray-800"
+              className="text-2xl font-semibold"
             >
               {editingHotel ? "Editar Hotel" : "Criação de Hotel"}
             </h2>
@@ -145,7 +145,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
               />
             </div>
             <div>
@@ -161,7 +161,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                 name="image"
                 value={formData.image}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
               />
             </div>
             <div>
@@ -177,7 +177,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                 name="additionalImages"
                 value={formData.additionalImages?.join(", ") || ""}
                 onChange={handleAdditionalImagesChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
               />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -194,7 +194,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
                 />
               </div>
               <div>
@@ -210,7 +210,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                   name="state"
                   value={formData.state}
                   onChange={handleChange}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
                 />
               </div>
             </div>
@@ -227,7 +227,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                 name="rating"
                 value={formData.rating}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
               />
             </div>
             <div>
@@ -243,7 +243,7 @@ const ModalForm = ({ addHotel, editHotel, editingHotel, setEditingHotel }) => {
                 name="price"
                 value={formData.price}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-slate-100"
               />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

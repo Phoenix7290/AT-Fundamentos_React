@@ -13,7 +13,7 @@ const Favoritos = () => {
   }, []);
 
   return (
-    <>
+    <div className="dark:bg-gray-900 dark:text-white min-h-screen">
       <Header />
       <main className="md:flex flex:row gap-10 justify-center content-center mb-7 mt-7 flex-wrap p-1.5">
         {hotelsData.map((hotel) => (
@@ -21,7 +21,7 @@ const Favoritos = () => {
         ))}
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

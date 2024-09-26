@@ -6,7 +6,6 @@ import {
 import Home from "../pages/Home";
 import Details from "../pages/Details";
 import Favoritos from "../pages/Favoritos";
-import Admin from "../pages/Admin";
 import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
@@ -21,10 +20,6 @@ const router = createBrowserRouter([
     {
         path: "/favoritos",
         element: <Favoritos />,
-    },
-    {
-        path: "/admin",
-        element: <Admin />,
     },
     {
         path: "*",

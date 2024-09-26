@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import { CgDarkMode } from "react-icons/cg";
 
 const Header = () => {
   const [menuIsActive, setMenuIsActive] = useState(false);
@@ -26,12 +25,6 @@ const Header = () => {
           </li>
           <li>
             <Link to="/favoritos" className="text-lg text-gray-900 dark:text-white">Favoritos</Link>
-          </li>
-          <li>
-            <Link to="/admin" className="text-lg text-gray-900 dark:text-white">Admin</Link>
-          </li>
-          <li>
-            <CgDarkMode className="text-2xl cursor-pointer text-gray-900 dark:text-white" />
           </li>
         </ul>
       </nav>

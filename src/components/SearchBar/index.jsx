@@ -17,7 +17,7 @@ const SearchBar = ({ onSearch, onSort }) => {
         <div>
           <label className="block text-center mb-2">Pesquise por Hotéis</label>
           <input
-            className="border border-gray-400 w-full mb-4 p-2"
+            className="border border-gray-400 w-full mb-4 p-2 dark:bg-gray-800"
             type="text"
             onChange={handleInputChange} 
           />
@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch, onSort }) => {
             name="hotel"
             id="hotel"
             onChange={handleSortChange}
-            className="border border-gray-400 p-2"
+            className="border border-gray-400 p-2 dark:bg-gray-800"
           >
             <option value="none" disabled>Ordenar</option>
             <option value="lowPrice">Menor Preço</option>

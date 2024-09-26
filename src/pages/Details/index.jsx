@@ -27,10 +27,10 @@ const Details = () => {
   }
 
   return (
-    <div>
+    <div className="dark:bg-gray-900 dark:text-white min-h-screen">
       <Header />
       <main className="p-5">
-        <div className="max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="max-w-xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
           <img
             className="w-full h-64 object-cover"
             src={selectedImage} 
@@ -38,11 +38,11 @@ const Details = () => {
           />
           <div className="p-4">
             <h1 className="text-2xl font-bold mb-2">{hotel.name}</h1>
-            <p className="text-gray-600">{hotel.city}, {hotel.state}</p>
-            <p className="text-gray-600">Rating: {hotel.rating}</p>
-            <p className="text-gray-600">Price: ${hotel.price}</p>
-            <p className="text-gray-700 mt-4">{hotel.description}</p>
-            <p className="text-gray-700 mt-2">{hotel.services}</p>
+            <p className="text-gray-600 dark:text-gray-400">{hotel.city}, {hotel.state}</p>
+            <p className="text-gray-600 dark:text-gray-400">Rating: {hotel.rating}</p>
+            <p className="text-gray-600 dark:text-gray-400">Price: ${hotel.price}</p>
+            <p className="text-gray-700 dark:text-gray-300 mt-4">{hotel.description}</p>
+            <p className="text-gray-700 dark:text-gray-300 mt-2">{hotel.services}</p>
           </div>
 
           {hotel.additionalImages && hotel.additionalImages.length > 0 && (
